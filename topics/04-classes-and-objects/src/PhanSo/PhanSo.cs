@@ -47,10 +47,7 @@ public class PhanSo
     {
         Console.WriteLine("{0}/{1}", _tuSo, _mauSo);
     }
-
-    // Hàm tìm USCLN của 2 số tự nhiên a,b
-    // Phương thức tĩnh (static), dùng chung cho cả lớp
-    
+  
     // Tối giản phân số
     public void ToiGian()
     {
