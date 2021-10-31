@@ -69,7 +69,7 @@ public class PhanSo
     }
     
     // Hàm cộng phân số với một phân số khác
-    // = _tuSo/_mauSo + p._tuSo/p._mauSo
+    // = this._tuSo/this._mauSo + p._tuSo/p._mauSo
     public void Cong(PhanSo p)
     {
         _tuSo = _tuSo * p._mauSo + _mauSo * p._tuSo;
