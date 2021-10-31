@@ -1,5 +1,7 @@
+/* Cài đặt Khai báo lớp Phân số
+*/
+
 using System;
-//Khai báo lớp Phân số
 public class PhanSo
 {
     private int _tuSo=0, _mauSo=1; // Đây là dữ liệu riêng (private), không cho phép truy xuất từ bên ngoài lớp
