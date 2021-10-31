@@ -61,8 +61,6 @@ public class PhanSo
                 ucln = i;
                 break;
             }
-            
-        
         _tuSo /= ucln;
         _mauSo /= ucln;
     }
