@@ -12,7 +12,8 @@ class SinhVien: Nguoi
     public SinhVien():base()
     {
     }
-    public SinhVien(string hoTen, bool gt, string ngaySinh, string ma, double dtb):base(hoTen, gt, ngaySinh)
+
+    public SinhVien(string hoTen, bool gt, DateTime ngaySinh, string ma, double dtb):base(hoTen, gt, ngaySinh)
     {
         _ma = ma;
         _dtb = dtb;

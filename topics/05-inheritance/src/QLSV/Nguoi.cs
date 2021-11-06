@@ -6,16 +6,17 @@ using System;
 
 class Nguoi
 {
-    protected string _hoTen;
+    string _hoTen;
+    DateTime _ngaySinh;
     bool _gioiTinh;
-    string _ngaySinh;
+    
     
     // Constructor
     public Nguoi()
     {
 
     }
-    public Nguoi(string hoTen="", bool gt=false, string ngaySinh="")
+    public Nguoi(string hoTen="", bool gt=false, DateTime ngaySinh=default(DateTime))
     {
         _hoTen = hoTen;
         _gioiTinh = gt;
@@ -35,8 +36,17 @@ class Nguoi
     {
         Console.Write("Ho ten: ");
         _hoTen = Console.ReadLine();
-        Console.Write("Gioi tinh : ");
-        _gioiTinh = bool.Parse(Console.ReadLine());
+        
+        try{
+            Console.Write("Ngay sinh: ");
+            _ngaySinh = DateTime.Parse(Console.ReadLine());
+        }
+        catch{
+            Console.WriteLine("Invalid datetime format (year/month/day)");
+        }
+        
+        Console.Write("Gioi tinh (nam 0, nu 1): ");
+        _gioiTinh = Convert.ToBoolean(Console.ReadLine());
     }
 
     // Hàm xuất

@@ -13,7 +13,7 @@ namespace QLSV
             n1.Xuat();
             */
             // Tạo đối tượng thuộc lớp Sinh viên
-            SinhVien sv1 = new SinhVien("Le Van Hoang", false, "21/08/2001", "62131234", 8.75);
+            SinhVien sv1 = new SinhVien("Le Van Hoang", false, new DateTime(2001, 08, 15), "62131234", 8.75);
             //sv1.Nhap();
             Console.WriteLine("\nThong tin sinh vien thu 1:");
             sv1.Xuat();
