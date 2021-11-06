@@ -13,7 +13,7 @@ public class Program
         const int HEIGHT = 300;
                 
         // create new game window:
-        gameWindow = new Window("Robot Dodge", WIDTH, HEIGHT);
+        gameWindow = new Window("Moving Object", WIDTH, HEIGHT);
 
         // create new player within the game window
         player1 = new Player(gameWindow);
