@@ -52,7 +52,7 @@ class Nguoi
     // Hàm xuất
     public void Xuat()
     {
-        Console.WriteLine("{0} - {1} - {2}", _hoTen, _ngaySinh, _gioiTinh);
+        Console.WriteLine("{0}, {1}, {2}", String.Format("{0, -30}", _hoTen), _ngaySinh.ToString("d"), _gioiTinh ? "Nu":"Nam");
     }
 
 }
