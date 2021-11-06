@@ -22,7 +22,7 @@ Lớp và đối tượng
  <h2>Cài đặt lớp</h2>
 
 ```cs
-[phạm vi truy cập] class <Tên lớp>
+[access modifier] class <ClassName>
 {
     // Khai báo các thuộc tính (biến thành viên)
     // Khai báo các phương thức (hàm thành viên)
