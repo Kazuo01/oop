@@ -10,6 +10,18 @@ class Nguoi
     bool _gioiTinh;
     string _ngaySinh;
     
+    // Constructor
+    public Nguoi()
+    {
+
+    }
+    public Nguoi(string hoTen="", bool gt=false, string ngaySinh="")
+    {
+        _hoTen = hoTen;
+        _gioiTinh = gt;
+        _ngaySinh = ngaySinh;
+    }
+
     // Hàm nhập
     public void Nhap()
     {
@@ -22,7 +34,7 @@ class Nguoi
     // Hàm xuất
     public void Xuat()
     {
-        Console.WriteLine("{0} - {1}", _hoTen, _gioiTinh);
+        Console.WriteLine("{0} - {1} - {2}", _hoTen, _ngaySinh, _gioiTinh);
     }
 
 }

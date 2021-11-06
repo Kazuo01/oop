@@ -7,7 +7,16 @@ class SinhVien: Nguoi
 {
     string _ma;
     double _dtb;
-    
+
+    // Constructor
+    public SinhVien():base()
+    {
+    }
+    public SinhVien(string hoTen, bool gt, string ngaySinh, string ma, double dtb):base(hoTen, gt, ngaySinh)
+    {
+        _ma = ma;
+        _dtb = dtb;
+    }
     // Phương thức nhập
     public new void Nhap()
     {
