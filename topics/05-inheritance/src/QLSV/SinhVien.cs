@@ -17,6 +17,13 @@ class SinhVien: Nguoi
         _ma = ma;
         _dtb = dtb;
     }
+
+    // Hàm thiết lập sao chép
+    public SinhVien(SinhVien sv):base((Nguoi) sv)
+    {
+        _ma = sv._ma;
+        _dtb = sv._dtb;
+    }
     // Phương thức nhập
     public new void Nhap()
     {

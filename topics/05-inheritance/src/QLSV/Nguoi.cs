@@ -22,6 +22,14 @@ class Nguoi
         _ngaySinh = ngaySinh;
     }
 
+    // copy constructor
+    public Nguoi(Nguoi ng)
+    {
+        _hoTen = ng._hoTen;
+        _gioiTinh = ng._gioiTinh;
+        _ngaySinh = ng._ngaySinh;
+    }
+
     // Hàm nhập
     public void Nhap()
     {
