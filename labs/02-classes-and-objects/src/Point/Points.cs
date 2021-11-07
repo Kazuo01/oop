@@ -5,16 +5,18 @@ Lớp Points mô tả các điểm trong mặt phẳng.
 using System;
 class Points
 {
+    // Fields
     private Point[] _points;
     private int _nPoints;
 
-    //Constructor
+    //Constructor: khởi tạo mảng các điểm
     public Points(int nPoints)
     {
         _nPoints = nPoints;
         _points = new Point[nPoints];
     }
 
+    // Hàm nhập: Nhập các điểm từ bàn phím
     public void Nhap()
     {
         for(int i=0; i < _nPoints; i++)
@@ -25,13 +27,14 @@ class Points
         }       
     }
 
+    // Xuất danh sách các điểm
     public void Xuat()
     {
         for(int i=0; i < _nPoints; i++)
             _points[i].Xuat();
     }
 
-    // Hàm tìm điểm xa gốc tọa độ nhất
+    // Hàm trả về điểm xa gốc tọa độ nhất
     public Point DiemXaNhat()
     {
         // So sánh khoảng cách mỗi điểm đến gốc tọa độ, 

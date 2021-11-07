@@ -21,7 +21,8 @@ class Point
         X = p.X;
         Y = p.Y;
     }
-    // Nhap
+    
+    // Input point from console
     public void Nhap()
     {
         Console.Write("Nhap hoanh do X: ");
@@ -48,7 +49,7 @@ class Point
         return Math.Sqrt(X*X + Y*Y);
     }
 
-    // ToString() hàm trả về chuỗi biểu diễn đối tượng
+    // ToString(): hàm trả về chuỗi biểu diễn đối tượng
     public override string ToString()
     {
         return $"({X}, {Y})";
