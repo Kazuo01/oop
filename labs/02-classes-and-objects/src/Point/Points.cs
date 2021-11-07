@@ -44,7 +44,7 @@ class Points
             _pointArray[i].Xuat();
     }
 
-    // Hàm trả về khoảng cách giữa 2 điểm
+    // Hàm trả về khoảng cách hình học giữa 2 điểm (công thức Euclide)
     double Distance(Point p1, Point p2)
     {
         return Math.Sqrt(Math.Pow(p1.X - p2.X, 2) + Math.Pow(p1.Y - p2.Y, 2));
