@@ -51,8 +51,11 @@ class Points
         // điểm nào khoảng cách lớn nhất <-> xa nhất
         Point p = new Point(_pointArray[0]);
         for(int i=1; i < _nPoints; i++)
-            if(p.Distance() < _pointArray[i].Distance())
+        {
+            double distance = Math.Sqrt(Math.Pow(PointArray[i].X, 2) + Math.Pow(PointArray[i].Y, 2));
+            if(Math.Sqrt(Math.Pow(p.X, 2) + Math.Pow(p.Y, 2)) < distance)
                 p = _pointArray[i];
+        }
         return p;
     }
 

@@ -42,13 +42,6 @@ class Point
         Y += dy;
     }
 
-
-    // Hàm tính khoảng cách từ điểm đến gốc tọa độ
-    public double Distance()
-    {
-        return Math.Sqrt(X*X + Y*Y);
-    }
-
     // ToString(): hàm trả về chuỗi biểu diễn đối tượng
     public override string ToString()
     {
