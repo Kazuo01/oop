@@ -9,6 +9,11 @@ class DSPhanSo
     private PhanSo[] _dsPS; // Mảng các phân số, mỗi phần tử là 1 đối tượng của lớp Phân số
     private int _size;  // Số lượng phân số
 
+    public PhanSo[] DSPS
+    {
+        get => _dsPS;
+    }
+
     // Hàm nhập danh sách phân số
     public void Nhap()
     {

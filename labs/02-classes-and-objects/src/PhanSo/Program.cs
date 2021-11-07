@@ -36,6 +36,11 @@ class Program
         // Display the sorted array
         Console.WriteLine("Mang sap xep tang dan: ");
         dsPS.Xuat();
+        
+        // Truy xuất phân số thứ i trong mảng
+        int i=1;
+        dsPS.DSPS[i].Xuat();
+
     }
 }
 
