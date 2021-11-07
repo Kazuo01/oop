@@ -2,7 +2,7 @@
 
 class Program
 {
-    public const double MaxValue = 1.7976931348623157E+308;
+    const double MaxValue = 1.7976931348623157E+308;
     static void Main(string[] args)
     {
         // Tạo mảng 5 điểm
@@ -16,7 +16,7 @@ class Program
         Console.WriteLine("Diem xa goc toa do nhat la: " + farestPoint.ToString());
 
         // Tìm cặp điểm gần nhau nhất
-        double maxDistance = MaxValue;
+        double minDistance = MaxValue;
         Point p1 = new Point();
         Point p2 = new Point();
         for(int i=0; i < nPoints-1; i++)
@@ -26,9 +26,9 @@ class Program
                 {
                     double distance = Math.Sqrt(Math.Pow(ps.PointArray[i].X - ps.PointArray[j].X, 2) + 
                     Math.Pow(ps.PointArray[i].Y - ps.PointArray[j].Y,2));
-                    if(maxDistance > distance)
+                    if(minDistance > distance)
                     {
-                        maxDistance = distance;
+                        minDistance = distance;
                         p1 = new Point(ps.PointArray[i].X, ps.PointArray[i].Y);
                         p2 = new Point(ps.PointArray[j].X, ps.PointArray[j].Y);
                     }
