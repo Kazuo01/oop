@@ -22,11 +22,16 @@ class Program
                                 // vì thế có thể in ra như một chuỗi
         */
 
-        // Create an array of Fractions
+        // Tạo mảng các phân số
         DSPhanSo dsPS = new DSPhanSo();
         dsPS.Nhap();
         dsPS.Xuat();
-        // Sort the array ascending
+
+        // Tìm phân số lớn nhất
+        PhanSo max = dsPS.Max();
+        Console.WriteLine("Phan so lon nhat la: " + max.ToString());
+
+        // Sắp xếp tăng dần
         dsPS.SapXep();
         // Display the sorted array
         Console.WriteLine("Mang sap xep tang dan: ");

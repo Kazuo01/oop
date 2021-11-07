@@ -5,9 +5,11 @@ using System;
 
 class DSPhanSo
 {
-    private PhanSo[] _dsPS;
-    private int _size;
+    // fields
+    private PhanSo[] _dsPS; // Mảng các phân số, mỗi phần tử là 1 đối tượng của lớp Phân số
+    private int _size;  // Số lượng phân số
 
+    // Hàm nhập danh sách phân số
     public void Nhap()
     {
         Console.Write("So luong phan so: ");
@@ -21,12 +23,14 @@ class DSPhanSo
         }        
     }
 
+    // Hàm xuất danh sách phân số
     public void Xuat()
     {
         for(int i=0; i < _size; i++)
             _dsPS[i].Xuat();
     }
 
+    // Sắp xếp danh sách phân số tăng dần
     public void SapXep()
     {
         // Sort ascending
@@ -38,6 +42,17 @@ class DSPhanSo
                     _dsPS[i] = _dsPS[j];
                     _dsPS[j] = tmp;
                 }
+    }
+
+    // Hàm trả về phân số lớn nhất
+    public PhanSo Max()
+    {
+        // Tạo 1 phân số & gán bằng phân số đầu tiên
+        PhanSo max = new PhanSo(_dsPS[0]);
+        // So sánh với các phân số còn lại & gán
+        for(int i=1; i < _size; i++)
+            if(_dsPS[i].GiaTri > max.GiaTri) max = _dsPS[i];
+        return max;
     }
 }
 

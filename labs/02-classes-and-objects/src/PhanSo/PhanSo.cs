@@ -47,6 +47,7 @@ class PhanSo
         Console.WriteLine("{0}/{1}", _tuSo, _mauSo);
     }
 
+    // Hàm trả về chuỗi biểu diễn phân số
     public override string ToString()
     {
         return $"{_tuSo}/{_mauSo}";
