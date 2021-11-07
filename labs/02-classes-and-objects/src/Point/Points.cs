@@ -44,19 +44,29 @@ class Points
             _pointArray[i].Xuat();
     }
 
+    // Hàm trả về khoảng cách giữa 2 điểm
+    double Distance(Point p1, Point p2)
+    {
+        return Math.Sqrt(Math.Pow(p1.X - p2.X, 2) + Math.Pow(p1.Y - p2.Y, 2));
+    }
+
     // Hàm trả về điểm xa gốc tọa độ nhất
     public Point DiemXaNhat()
     {
         // So sánh khoảng cách mỗi điểm đến gốc tọa độ, 
         // điểm nào khoảng cách lớn nhất <-> xa nhất
+        Point gocToaDo = new Point(0, 0);
         Point p = new Point(_pointArray[0]);
+        double d = Distance(_pointArray[0], gocToaDo);
+
         for(int i=1; i < _nPoints; i++)
         {
-            double distance = Math.Sqrt(Math.Pow(PointArray[i].X, 2) + Math.Pow(PointArray[i].Y, 2));
-            if(Math.Sqrt(Math.Pow(p.X, 2) + Math.Pow(p.Y, 2)) < distance)
+            if (d < Distance(_pointArray[i], gocToaDo))
+            {
+                d = Distance(_pointArray[i], gocToaDo);
                 p = _pointArray[i];
+            }       
         }
         return p;
     }
-
 }
