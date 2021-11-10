@@ -15,7 +15,7 @@ Mối quan hệ tổng quát hóa - đặc biệt hóa (generalization - special
 Lập trình hướng đối tượng thể hiện mối quan hệ tổng quát hóa - đặc biệt hóa thông qua kỹ thuật thừa kế (inheritance).
 
 ### Thừa kế
-Thừa kế là một đặc điểm quan trọng hàng đầu, cho phép xây dựng các lớp mới kế thừa (tái sử dụng) các lớp đã có, giúp giảm thời gian & chi phí phát triển. Kỹ thuật thừa kế xây dựng lớp cơ sở (base classs) gồm các thuộc tính và phương thức cho phép các lớp dẫn xuất (derived classes) của nó sử dụng. 
+Thừa kế là một đặc điểm quan trọng hàng đầu, cho phép xây dựng các lớp mới tái sử dụng, mở rộng hoặc hiệu chỉnh các thành phần của các lớp khác. Kỹ thuật thừa kế xây dựng lớp cơ sở (base classs) gồm các thuộc tính và phương thức cho phép các lớp dẫn xuất (derived classes) của nó sử dụng. 
 
 -Ví dụ: Xét bài toán quản lý tài khoản ngân hàng, có nhiều loại tài khoản ngân hàng khác nhau như: tài khoản tiết kiệm (saving account), tài khoản thanh toán (checking account). Các loại tài khoản khác nhau đều có chung một số thuộc tính (như số tài khoản, số dư) và phương thức (chẳng hạn, kiểm tra số dư). Vì thế, có thể tạo một lớp cơ sở (lớp tổng quát hóa) của 2 lớp này với các thành phần chung.
 
@@ -42,7 +42,8 @@ Thừa kế là một đặc điểm quan trọng hàng đầu, cho phép xây d
     // Khai báo các phương thức của lớp dẫn xuất
 } 
 ```
-
+- Thuộc tính truy cập (access modifier)
+  - 
 - Ví dụ
 ```csharp
 /*
@@ -64,7 +65,7 @@ class Rectangle
         _height = h;
     }
 
-    // trả về diện tích hình chữ nhật
+    // Phương thức tính & trả về diện tích hình chữ nhật
     public double Area()
     {
         return _height * _width;
@@ -84,3 +85,16 @@ class Square : Rectangle
 - Hàm thiết lập tĩnh (khởi tạo dữ liệu tĩnh cho lớp).
 - Hàm thiết lập tạo mới đối tượng (instance constructor).
 - Hàm hủy (destructor hay finalizer), được trình dọn rác (runtime’s garbage collector) gọi để hủy đối tượng.
+
+### Lớp niêm phong (sealed class)
+Còn gọi là lớp cuối cùng (final class), do lớp này không cho phép lớp khác sử dụng lại nó.
+- Khi muốn một lớp không cho phép thừa kế, thêm từ khóa `sealed` trước khai báo tên lớp.
+- Ví dụ:
+```csharp
+// Lớp SavingAccount kế thừa lớp Account và không có lớp nào được kế thừa nó.
+sealed class SavingAccount : Account
+{
+    // Các thành phần dữ liệu của lớp SavingAccount
+    // Các phương thức của lớp SavingAccount
+}
+```

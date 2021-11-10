@@ -83,7 +83,6 @@
 
 ### Ngôn ngữ lập trình C#
 
-
 ### <a name="resources">Tài liệu tham khảo</a>
 
 #### [Microsoft: .NET Framework documentation](https://docs.microsoft.com/en-us/dotnet/framework/)
