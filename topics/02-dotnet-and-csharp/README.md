@@ -30,9 +30,9 @@
 
 </div>
 
-## <a href="dotnet">Sơ lược về .NET </a>
+## <a href="dotnet" name="dotnet">Sơ lược về .NET </a>
 
-## <a href="cs">Ngôn ngữ lập trình C#</a>
+## <a href="cs" name="csconcepts>Ngôn ngữ lập trình C#</a>
 
 ## Tài liệu tham khảo
 
