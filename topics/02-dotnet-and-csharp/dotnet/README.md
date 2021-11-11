@@ -51,7 +51,7 @@
 - **Dịch**: Mã nguồn được dịch thành file mã trung gian (CIL) với phần mở rộng là `.exe` hoặc `.dll`. 
 - **Chạy**: Khi chạy ứng dụng, trình quản lý thực thi CLR chuyển mã trung gian thành mã máy thông qua trình biên dịch gọi là JIT (just-in-time compiler).
 
-<img src="figs/swimlane-architecture-framework.svg" width="75%">
+<img src="../figs/swimlane-architecture-framework.svg" width="75%">
 
 
 ## .NET 5 (.NET Core)
