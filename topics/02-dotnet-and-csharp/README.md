@@ -30,11 +30,11 @@
 
 </div>
 
-## <a name="dotnet">Sơ lược về .NET </a>
+## <a href="dotnet">Sơ lược về .NET </a>
 
-## Ngôn ngữ lập trình C#
+## <a href="cs">Ngôn ngữ lập trình C#</a>
 
-## <a name="resources">Tài liệu tham khảo</a>
+## Tài liệu tham khảo
 
 [Microsoft: .NET Framework documentation](https://docs.microsoft.com/en-us/dotnet/framework/)
 
