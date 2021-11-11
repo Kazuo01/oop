@@ -18,7 +18,7 @@
         <h4>Quy cách đặt tên </h4>
     </li>
     <li>
-        <h4>Các thành phần của C# </h4>
+        <h4>Lập trình với C#</h4>
     </li>
     <li>
         <h4>Xử lý lỗi và ngoại lệ </h4>
