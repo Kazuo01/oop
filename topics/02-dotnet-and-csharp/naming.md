@@ -11,14 +11,18 @@
     - Giao diện (interface). Đối với lớp đặc biệt này bổ sung ký tự `I` ở đầu, ví dụ: `IAnimal`.
     - Các thành viên có thuộc tính `public` của lớp (các trường, thuộc tính, phương thức...).
 - Đặt tên kiểu `camelCase` đối với:
+    - Tham số của hàm.
     - Các thành phần dữ liệu riêng (private) hoặc nội bộ (internal), thêm dấu `_` ở đầu. 
     - Ví dụ:
     ```csharp
+    // Khai báo lớp xe hơi
     public class Car
     {
-        private string _make;
-        private int _manufacturerYear;
+        // Fields
+        private string _make;   // Hãng sản xuất
+        private int _manufacturerYear;  // Năm sản xuất
 
+        // Constructor
         public Car(string make, int manufacturerYear)
         {
             _make = make;
