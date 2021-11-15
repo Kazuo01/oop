@@ -9,7 +9,9 @@ class Program
 {
     static void Main(string[] args)
     {
-
+      /*
+      Thao tác với đối tượng đơn lẻ
+      */
         PhanSo p1 = new PhanSo(); // Tạo đối tượng phân số
         p1.Nhap();   // Gọi phương thức Nhap()
         p1.Xuat();   // Gọi phương thức Xuat()
@@ -34,7 +36,14 @@ class Program
         Console.WriteLine("Tong 2 phan so:");
         p1.ToiGian();
         p1.Xuat();
-
+        // Tính tổng 2 phân số, sử dụng toán tử nạp chồng +
+        PhanSo p3 = p1 + p2;
+        p3.ToiGian();
+        Console.WriteLine("Tong 2 phan so: " + p3.ToString());
+        
+      /*
+      Thao tác với mảng các đối tượng
+      */
         // Tạo một mảng phân số
         Console.Write("Nhap so luong phan so: ");
         int numberOfElements = int.Parse(Console.ReadLine());
@@ -75,4 +84,3 @@ class Program
           psList[i].Xuat();
     }
 }
-

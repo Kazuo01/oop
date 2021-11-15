@@ -1,9 +1,4 @@
 using SplashKitSDK;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
-
 
 // Khai báo lớp hình tròn 
 public class Circle
@@ -40,6 +35,6 @@ public class Circle
         _x = x;
         _y = y;
         _radius = r;
-        _color = Color.Red;
+        _color = Color.Blue;
     }
 }

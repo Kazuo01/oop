@@ -78,5 +78,42 @@ public class PhanSo
         _mauSo = _mauSo * p._mauSo;
     }
 
+    // Định nghĩa toán tử trên lớp (nạp chồng toán tử - operator overloading)
+    // Định nghĩa toán tử dấu - trên phân số
+    public static PhanSo operator -(PhanSo p) 
+    {
+        return new PhanSo(-p._tuSo, p._mauSo);
+        // => new PhanSo(-p._tuSo, p._mauSo);
+    }
 
+    // Định nghĩa toán tử + cộng 2 phân số
+    public static PhanSo operator +(PhanSo a, PhanSo b)
+    {
+        return new PhanSo(a._tuSo * b._mauSo + b._tuSo * a._mauSo, a._mauSo * b._mauSo);
+        // => new PhanSo(a._tuSo * b._mauSo + b._tuSo * a._mauSo, a._mauSo * b._mauSo);
+    }
+
+    // Định nghĩa toán tử - trừ 2 phân số
+    public static PhanSo operator -(PhanSo a, PhanSo b)
+    {
+        return a + (-b);
+        //=> a + (-b);
+    }
+
+    // Định nghĩa toán tử / chia 2 phân số
+    public static PhanSo operator /(PhanSo a, PhanSo b)
+    {
+        if (b._mauSo == 0)
+        {
+            throw new DivideByZeroException();
+        }
+        return new PhanSo(a._tuSo * b._mauSo, a._mauSo * b._tuSo);
+    }
+
+    // Hàm trả về chuỗi biểu diễn phân số
+    public override string ToString() 
+    {
+       return $"{_tuSo}/{_mauSo}"; 
+       //=> $"{_tuSo}/{_mauSo}";
+    }
 } // End of class PhanSo
