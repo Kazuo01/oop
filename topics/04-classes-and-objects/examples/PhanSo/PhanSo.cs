@@ -116,5 +116,4 @@ public class PhanSo
        return $"{_tuSo}/{_mauSo}"; 
        //=> $"{_tuSo}/{_mauSo}";
     }
-    
 } // End of class PhanSo

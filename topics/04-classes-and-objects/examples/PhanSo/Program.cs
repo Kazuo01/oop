@@ -12,7 +12,6 @@ class Program
       /*
       Thao tác với đối tượng đơn lẻ
       */
-
         PhanSo p1 = new PhanSo(); // Tạo đối tượng phân số
         p1.Nhap();   // Gọi phương thức Nhap()
         p1.Xuat();   // Gọi phương thức Xuat()
@@ -45,7 +44,6 @@ class Program
       /*
       Thao tác với mảng các đối tượng
       */
-
         // Tạo một mảng phân số
         Console.Write("Nhap so luong phan so: ");
         int numberOfElements = int.Parse(Console.ReadLine());
@@ -86,4 +84,3 @@ class Program
           psList[i].Xuat();
     }
 }
-
