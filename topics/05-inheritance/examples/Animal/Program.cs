@@ -4,15 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Tạo 1 đối tượng Animal
         Animal animal = new Animal();
         animal.Speak();
-        Animal dog = new Dog();
+        // Tạo 1 đối tượng Dog
+        Dog dog = new Dog();
         dog.Speak();
-        Animal cat = new Cat();
-        cat.Speak();
-        Console.WriteLine("Total animals: " + Animal.Quantity);
-        Console.WriteLine("Number of cats: " + Cat.Quantity);
-        Console.WriteLine("Number of dogs: " + Dog.Quantity);
-
+        // Tạo 1 đối tượng Animal là Dog
+        Animal dog2 = new Dog();
+        dog2.Speak();
     }
 }

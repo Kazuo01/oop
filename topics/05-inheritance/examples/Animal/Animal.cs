@@ -1,49 +1,43 @@
 /*
-Animal class
+Xây dựng lớp Animal
 */
 
 using System;
 
 class Animal
 {
-    private static int _quantity=0;
-    public static int Quantity{get => _quantity;}
+    public virtual string Name{get; set;}
 
     public Animal()
     {
-        _quantity++;
+        Name = "Animal";
     }
- 
     public virtual void Speak()
     {
-        Console.WriteLine("Halo, I'm an animal.");
+        Console.WriteLine("I'm a/an" + Name);
     }
+
 }
 
+// Lớp Dog kế thừa lớp Animal
 class Dog:Animal
 {
-    private static int _quantity=0;
-    public static int Quantity{get => _quantity;}
+    public override string Name{get;set;}
     public Dog()
     {
-        _quantity++;
+        Name = "Dog";
     }
     public override void Speak()
     {
-        Console.WriteLine("Gow gow! I'm a dog");
+        Console.WriteLine("I'm a/an " + Name);
     }
 }
 
+// Lớp Cat kế thừa lớp Animal
 class Cat:Animal
 {
-    private static int _quantity=0;
-    public static int Quantity{get => _quantity;}
-    public Cat()
-    {
-        _quantity++;
-    }
-    public override void Speak()
-    {
-        Console.WriteLine("Meow! I'm a cat");
-    }
+       public override void Speak()
+       {
+           Console.WriteLine("Meow, I'm a cat!");
+       }
 }
