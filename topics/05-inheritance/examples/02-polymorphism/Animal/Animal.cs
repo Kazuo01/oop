@@ -1,10 +1,10 @@
 /*
 Minh họa quan hệ thừa kế & đa hình.
-Lớp cơ sở:
-Animal, mô tả động vật tổng quát.
-Các lớp dẫn xuất từ lớp Animal:
-Dog, mô tả loài chó.
-Cat, mô tả loài mèo.
+* Lớp cơ sở:
+- Animal, mô tả động vật tổng quát.
+* Các lớp dẫn xuất từ lớp Animal:
+- Dog, mô tả loài chó.
+- Cat, mô tả loài mèo.
 */
 
 using System;
@@ -21,7 +21,7 @@ class Animal
     }
 
     // Hàm ảo, hàm này sẽ được ghi đè bởi phương thức cùng tên của lớp con
-       public virtual void Speak()
+    public virtual void Speak()
     {
         Console.WriteLine("Halo, I'm an animal.");
     }

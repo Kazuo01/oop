@@ -1,10 +1,12 @@
-﻿using System;
+﻿// Main program
+
+using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        // Tạo mới 1 động vật tổng quát:
+        // Tạo mới 1 động vật tổng quát
         Animal animal = new Animal();
         animal.Speak();
 
