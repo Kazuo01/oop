@@ -4,13 +4,15 @@ using System;
 class Xe
 {
     // Các trường (fields)
-    protected string _bienSo;
+    protected string _bienSo;   // protected -> chỉ truy xuất được từ bên trong lớp và lớp con
     protected int _namSX;
     protected double _gia;
 
-    // Hàm thiết lập
+    // Các hàm thiết lập (constructor)
     public Xe()
-    {}
+    {
+    }
+
     public Xe(string bienSo, int namSX, double gia)
     {
         _bienSo = bienSo;
