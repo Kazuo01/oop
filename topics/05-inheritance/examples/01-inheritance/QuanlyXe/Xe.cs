@@ -19,9 +19,9 @@ using System;
 class Xe
 {
     // Các trường (fields)
-    private string _bienSo;
-    private int _namSX;
-    private double _gia;
+    protected string _bienSo;
+    protected int _namSX;
+    protected double _gia;
 
     // Hàm thiết lập
     public Xe()
@@ -36,11 +36,11 @@ class Xe
     // Hàm nhập thông tin của xe
     public void Nhap()
     {
-        Console.WriteLine("Bien so: ");
+        Console.Write("Bien so: ");
         _bienSo = Console.ReadLine();
-        Console.WriteLine("Nam san xuat: ");
+        Console.Write("Nam san xuat: ");
         _namSX = int.Parse(Console.ReadLine());
-        Console.WriteLine("Gia: ");
+        Console.Write("Gia: ");
         _gia = int.Parse(Console.ReadLine());        
     }
 

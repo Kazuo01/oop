@@ -7,7 +7,7 @@ class XeCon:Xe
     // constructors
     public XeCon():base()
     {
-        
+
     }
     public XeCon(string bienSo, int namSX, double gia, int soChoNgoi, string loaiXe):base(bienSo, namSX, gia)
     {
@@ -20,18 +20,15 @@ class XeCon:Xe
     {
         base.Nhap(); // Gọi phương thức nhập của lớp cơ sở
         // Nhập thông tin bổ sung của xe con
-        Console.WriteLine("Loai xe (sedan/SUV/Pickup...):");
+        Console.Write("Loai xe (sedan/SUV/Pickup...):");
         _loaiXe = Console.ReadLine();
-        Console.WriteLine("So cho ngoi: ");
+        Console.Write("So cho ngoi: ");
         _soChoNgoi = int.Parse(Console.ReadLine());
     }
 
     // Hàm xuất thông tin xe con
     public new void Xuat()
     {
-        base.Xuat(); // Gọi phương thức nhập của lớ
-        // In thông tin bổ sung của xe con
-        Console.WriteLine("Loai xe: " + _loaiXe); 
-        Console.WriteLine("So cho ngoi: {0}", _soChoNgoi);
+         Console.WriteLine("Bien so: {0}\tNam san xuat: {1}\tGia: {2}\tLoai xe: {3}\tSo cho ngoi: {4}", _bienSo, _namSX, _gia, _loaiXe, _soChoNgoi);
     }
 }
