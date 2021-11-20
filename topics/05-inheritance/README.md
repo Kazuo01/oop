@@ -18,18 +18,17 @@ Lập trình hướng đối tượng thể hiện mối quan hệ tổng quát 
 ### Thừa kế
 Thừa kế là một đặc điểm quan trọng hàng đầu của phương pháp lập trình hướng đối tượng, cho phép xây dựng các lớp mới tái sử dụng các thành phần của các lớp khác, đồng thời bổ sung các thành phần mới. Kỹ thuật thừa kế xây dựng lớp cơ sở (base class) gồm các thuộc tính và phương thức cho phép các lớp dẫn xuất (derived classes) của nó sử dụng. 
 
--Ví dụ: Xét bài toán quản lý tài khoản ngân hàng, có nhiều loại tài khoản ngân hàng khác nhau như: tài khoản tiết kiệm (saving account), tài khoản thanh toán (checking account). Các loại tài khoản này có chung một số thuộc tính (như: số tài khoản, số dư) và phương thức (chẳng hạn, kiểm tra số dư). Vì thế, có thể tạo một lớp cơ sở (lớp tổng quát hóa) của 2 lớp này với các thành phần chung.
+- Lớp cơ sở (base class) hay lớp cha (parent): Là lớp cấp quyền thừa kế. 
+- Lớp dẫn xuất (derived class) hay lớp con (child): Là lớp được hưởng thừa kế. Lớp cơ sở là lớp tổng quát hóa của lớp dẫn xuất, hay ngược lại, lớp dẫn xuất là trường hợp đặc biệt hóa của lớp cơ sở.
 
-- Lớp cơ sở (base class) hay lớp cha (parent): Là lớp cấp quyền thừa kế.
-- Lớp dẫn xuất (derived class) hay lớp con (child): Là lớp được hưởng thừa kế.
 #### Thừa kế đơn (single inheritance)
-- Một lớp chỉ được thừa kế từ một lớp cơ sở.
+- Thừa kế đơn là dạng thừa kế mà một lớp chỉ được thừa kế từ một lớp cơ sở.
 - Một số ngôn ngữ (như Java, C#) chỉ hỗ trợ thừa kế đơn. Tuy nhiên có thể cài đặt đa thừa kế thông qua lớp giao diện (interfaces).
 
 - Có thể cài đặt thừa kế chuyển tiếp (transitive inheritance). Tức là, lớp C kế thừa lớp B và lớp B lại kế thừa lớp A; khi đó lớp C có thể có những thành phần được chia sẻ từ lớp A.
 
 #### Đa thừa kế (multiple inheritance) 
-- Một lớp có thể được thừa kế từ nhiều lớp cơ sở.
+- Đa thừa kế cho phép một lớp có thể được thừa kế từ nhiều lớp cơ sở.
 - Các ngôn ngữ thông dụng có hỗ trợ đa thừa kế: C++, Python.
 
 ## Cài đặt thừa kế trong C#
@@ -48,9 +47,11 @@ Thừa kế là một đặc điểm quan trọng hàng đầu của phương ph
 ```csharp
 /*
 Lớp Rectangle biểu diễn hình chữ nhật.
-Lớp Square biểu diễn hình vuông. Hình vuông là hình chữ nhật có 2 cạnh liên tiếp bằng nhau, do đó là trường hợp đặc biệt của hình chữ nhật.
+Lớp Square biểu diễn hình vuông. Hình vuông là trường hợp đặc biệt hóa của hình chữ nhật khi có 2 liên tiếp bằng nhau. 
 */
 using System;
+
+// Lớp hình chữ nhật
 class Rectangle
 {
     // fields
@@ -72,7 +73,8 @@ class Rectangle
     }
 }
 
-// Lớp hình vuông kế thừa lớp hình chữ nhật
+/* Lớp hình vuông kế thừa lớp hình chữ nhật
+ */
 class Square : Rectangle
 {
     public Square(double w): base(w, w)
