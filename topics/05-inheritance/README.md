@@ -9,6 +9,7 @@ Thừa kế và Đa hình
 </div>
 
  <h2><a name="concepts">Tổng quát hóa và đặc biệt hóa</a></h2>
+ 
 ### Khái niệm
 Mối quan hệ tổng quát hóa - đặc biệt hóa (generalization - specialization) rất phổ biến trong thế giới thực. Có những lớp đối tượng là trường hợp đặc biệt của một lớp khác tổng quát hơn; khi đó lớp đặc biệt mang những thuộc tính và hành vi của lớp tổng quát, đồng thời có thêm những thành phần riêng của nó. Ví dụ, cả 3 loài chó, mèo, bò đều thuộc lớp động vật, nhưng mỗi loài lại có những đặc điểm, hành vi riêng (mèo bắt chuột, chó giữ nhà, bò ăn cỏ). Trong trường hợp này, chó, mèo và bò là các trường hợp đặc biệt của lớp động vật; ngược lại, động vật là lớp tổng quát của các loài chó, mèo và bò. Một lớp đặc biệt lại có thể là lớp tổng quát của những lớp khác, chẳng hạn, loài chó có nhiều giống: chó Phú Quốc, chó Shiba, chó Husky,...
 
